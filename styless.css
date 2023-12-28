@@ -78,6 +78,7 @@ article .portfolio a:hover{
     transition: all .3s ease;
     opacity: .5;
     box-shadow: none;
+    border: 2px solid #000;
 }
 
 
@@ -106,12 +107,12 @@ article .portfolio a p{
     position: absolute;
     height: fit-content;
     width: 170px;
-    top: 23%;
+    top: 18%;
     left: 0;
     right: 0;
     margin: auto;
     opacity: 0;
-    font-size: 1.315rem;
+    font-size: 1.37rem;
     font-family: "roboto";
     font-weight: 800;
     color: #000;
