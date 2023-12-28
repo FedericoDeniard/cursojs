@@ -60,11 +60,31 @@ article .portfolio a {
     box-shadow: 7px 7px 6px 1px;
     border-radius: 10px;
     margin: 20px;
+    position: relative;
+    transition: all .3s ease;
 }
 
 article .portfolio a:hover{
     box-shadow: none;
     outline: 4px solid #ffcd28;
+}
+
+.card:hover img {
+    transform: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+    transition: all .3s ease;
+    opacity: .5;
+    box-shadow: none;
+}
+
+
+.card:hover p{
+    opacity: 1;
+    transform: translateY(10%);
+    transition: all .3s ease;
 }
 
 article .portfolio a h5{
@@ -76,11 +96,30 @@ article .portfolio a h5{
 article .portfolio a img{
     margin: auto;
     box-shadow: 5px 5px 10px 2px;
-    height: 75%;
-    width: 75%;
-    object-fit: cover
-    ;
-    
+    border-radius: 4px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+article .portfolio a p{
+    position: absolute;
+    height: fit-content;
+    width: 170px;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-family: "roboto";
+    font-weight: bold;
+    color: #000;
+}
+
+article .portfolio a img:hover{
+    position: relative;
+
 }
 
 #even {
