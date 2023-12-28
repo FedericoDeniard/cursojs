@@ -111,15 +111,13 @@ article .portfolio a p{
     right: 0;
     margin: auto;
     opacity: 0;
-    font-size: 1.31rem;
+    font-size: 1.315rem;
     font-family: "roboto";
-    font-weight: bold;
+    font-weight: 800;
     color: #000;
-}
-
-article .portfolio a img:hover{
-    position: relative;
-
+    text-shadow: 0 1px 0 #fff;
+    /* border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.3); */
 }
 
 #even {
@@ -149,6 +147,7 @@ footer a{
     font-size: 20px;
     text-decoration: none;
     color: #000;
+    font-family: "roboto";
 }
 
 footer a img{
