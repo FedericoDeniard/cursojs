@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-size: 10px;
 }
@@ -34,24 +35,45 @@ article {
     padding: 1rem;
 }
 
-article h5 {
-    font-size: 2rem;
+article h3 {
+    font-size: 5rem;
     font-family: "Roboto";
     font-weight: 400;
 }
 
 article .portfolio {
-    background-color: grey;
-    width: 100%;
-    display: grid;
-    height: 500px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 article .portfolio a {
+    width: 300px;        
+    height: 450px;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: #000;
-    font-size: 3rem;
+    box-shadow: 7px 7px 6px 1px;
+}
+
+article .portfolio a h5{
+    margin: auto;
+    font-size: 3.5rem;
+    font-family: "Roboto";
+}
+
+article .portfolio a img{
+    margin: auto;
+    width: 90%;
+    box-shadow: 5px 5px 10px 2px;
+}
+
+#even {
+    background-color: #D2B48C;
+}
+
+#odd {
+    background-color: #FFE4B5;
 }
 
