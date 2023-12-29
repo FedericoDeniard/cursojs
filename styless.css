@@ -129,7 +129,7 @@ article .portfolio a p{
     font-family: "roboto";
     font-weight: 800;
     color: #000;
-    text-shadow: 0 .5px 0 #fff;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 .even {
