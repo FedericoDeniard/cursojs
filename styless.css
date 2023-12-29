@@ -20,6 +20,7 @@ header {
     background-color: #ffcd28;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 header h1 {
@@ -70,6 +71,10 @@ article .portfolio a {
 article .portfolio a:hover{
     box-shadow: none;
     outline: 4px solid #ffcd28;
+}
+
+.card{
+    user-select: none;
 }
 
 .card:hover img {
@@ -153,6 +158,7 @@ footer a{
     text-decoration: none;
     color: #000;
     font-family: "roboto";
+    user-select: none;
 }
 
 footer a img{
