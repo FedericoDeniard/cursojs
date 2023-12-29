@@ -19,7 +19,6 @@ header {
     height: 7rem;
     background-color: #ffcd28;
     display: flex;
-    padding-left: 2rem;
     align-items: center;
 }
 
@@ -31,7 +30,7 @@ header h1 {
 
 header h1 p {
     font-size: 1.5rem;
-    margin-left: 15rem;
+    margin-left: 10rem;
 }
 
 article {
@@ -128,11 +127,11 @@ article .portfolio a p{
     text-shadow: 0 .5px 0 #fff;
 }
 
-#even {
+.even {
     background-color: #E8C3A0;
 }
 
-#odd {
+.odd {
     background-color: #FFE4B5;
 }
 
