@@ -1,3 +1,5 @@
+import "./style.css"
+
 class DarkTheme extends HTMLElement {
   constructor() {
     super();
