@@ -15,6 +15,7 @@ body {
     text-align: center;
 }
 
+
 header {
     width: 100vw;
     height: 7rem;
@@ -98,7 +99,6 @@ article .portfolio a:hover{
 .card:hover h5 {
     font-size: 4.5rem;
     transition: all .3s ease;
-    -webkit-text-stroke: 1px #fff;
 }
 
 .card:hover p{
@@ -115,7 +115,7 @@ article .portfolio a h5{
 
 article .portfolio a img{
     margin: auto;
-    box-shadow: 5px 5px 10px 2px;
+    box-shadow: 5px 5px 10px 2px #000;
     border-radius: 4px;
     height: 300px;
     width: 200px;
