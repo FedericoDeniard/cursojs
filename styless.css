@@ -44,7 +44,9 @@ header h1 p {
 article {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
+    width: 100%;
 }
 
 article h3 {
@@ -54,11 +56,25 @@ article h3 {
     padding: 2rem;
 }
 
+#zoomText{
+    font-size: 3rem;
+}
+
+#zoom {
+    width: 600px;
+    max-width: 100%;
+}
+
+#zoom::thumb{
+    color: #ffcd28;
+}
+
 article .portfolio {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: fit-content;
+    width: 100%;
 }
 
 article .portfolio a {

@@ -11,18 +11,20 @@
 <body class="background">
     <header class="headerFooter">
         <a href="../../index.html">
-        <h1 class="cardTitle">Javascript
-            <p class="cardTitle">by Federico Deniard</p>
+        <h1 class="title">Javascript
+            <p class="title">by Federico Deniard</p>
         </h1>
         </a>
     </header>
         <dark-theme></dark-theme>
     </header>
     <article>
-        <h3 class="cardTitle">Projects</h3>
+        <h3 class="title">Projects</h3>
+        <label id="zoomText" for="zoom">0%</label>
+        <input id="zoom" type="range" min="-100" max="100" step="20">
         <section class="portfolio">
             <a class="card Chordoku even" id="even" href="https://chord-doku.vercel.app/" target="_blank">
-                <h5 class="cardTitle">Chordoku</h5>
+                <h5 class="title cardTitle">Chordoku</h5>
                 <img class="image" src="./assets/chordoku.png">
                 <p class="text">Key contributions:
                     Implementation of responsive design, flexbox, and grid layouts in React for Chordoku's user interface.
@@ -36,28 +38,28 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore consectetur fugiat commodi, at quaerat labore explicabo ad necessitatibus aliquam! Consequuntur adipisci quos deserunt, provident expedita temporibus doloremque saepe omnis ex.</p>
             </a> -->
             <a class="card random-color odd" id="odd" href="./pages/random-color/index.html" target="_blank">
-                <h5 class="cardTitle">Random Color</h5>
+                <h5 class="title cardTitle">Random Color</h5>
                 <img class="image" src="./assets/randomColor.png">
                 <p class="text">Random Color is a button that generates a random hexadecimal color for the user.</p>
             </a>
             <a class="card fede even" id="even" href="https://federicodeniard.github.io/practice-page/" target="_blank">
-                <h5 class="cardTitle">My page</h5>
+                <h5 class="title cardTitle">My page</h5>
                 <img class="image" src="./assets/me.jpeg">
                 <p class="text">This is my first project—I've built a website to share my music and musical experiences. I primarily used HTML and CSS, and later incorporated JavaScript to create components such as the header and footer.</p>
             </a>
             <a class="card select-color odd" id="odd" href="./pages/select-color/index.html" target="_blank">
-                <h5 class="cardTitle">RGB selector</h5>
+                <h5 class="title cardTitle">RGB selector</h5>
                 <img class="image" src="./assets/colorSelector.png">
                 <p class="text">RGB selector is a selector of red(r), green(g) and blue(b) values to pick a rgb color</p>
             </a>
         </section>
     </article>
     <footer class="headerFooter">
-        <a class="linkedin cardTitle svg" href="https://www.linkedin.com/in/federicodeniard/" target="_blank">
+        <a class="linkedin title svg" href="https://www.linkedin.com/in/federicodeniard/" target="_blank">
             <img src="./assets/linkedin.svg">
             LinkedIn
         </a>
-        <a class="github cardTitle svg" href="https://github.com/FedericoDeniard" target="_blank">
+        <a class="github title svg" href="https://github.com/FedericoDeniard" target="_blank">
             <img src="./assets/github.svg">
             GitHub
         </a>
