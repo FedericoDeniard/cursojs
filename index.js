@@ -102,11 +102,7 @@ slider.addEventListener('input', () => {
         cardsTitle[i].style.fontSize = `calc(35px + (${slider.value}px/10))`;
     }
     for (let i = 0; i < cardsText.length; i++){
-        if (slider.value >= 0){
-            cardsText[i].style.fontSize = `calc(13.7px + (${slider.value}px/14))`;
-        }
-        else{
-            cardsText[i].style.fontSize = `calc(13.7px + (${slider.value}px/60))`;
+            cardsText[i].style.fontSize = `calc(13.7px + (${slider.value}px/70))`;
         }
     }
-});
+);
