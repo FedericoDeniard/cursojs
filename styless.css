@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 10px;
     font-family: "roboto";
+    transition: all .3s ease
 }
 
 body {
