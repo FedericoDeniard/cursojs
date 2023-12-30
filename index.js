@@ -1,12 +1,14 @@
+//  Dark Theme function
 document.addEventListener('DOMContentLoaded', function() {
     const articleBackground = document.getElementsByClassName('background')[0];
     const evenCards = document.getElementsByClassName ('even');
     const oddCards = document.getElementsByClassName('odd');
     const cardsText = document.getElementsByClassName('text');
-    const cardsTitle = document.getElementsByClassName('cardTitle');
+    const titles = document.getElementsByClassName('title');
     const theme = document.getElementById("toggle");
     const images = document.getElementsByClassName('image');
     const headerFooter = document.getElementsByClassName('headerFooter');
+    const zoomText = document.getElementById('zoomText');
 
     theme.addEventListener('click', () => {
         const toggleValue = theme.checked;
@@ -23,14 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 cardsText[i].style.color = "#fff"
                 cardsText[i].style.textShadow = "1px 1px 2px #000"
             }
-            for (let i = 0; i < cardsTitle.length; i++){
-                cardsTitle[i].style.color = "#CCCCCC ";
+            for (let i = 0; i < titles.length; i++){
+                titles[i].style.color = "#CCCCCC ";
             }
             for (let i = 0; i < images.length; i++){
                 images[i].style.boxShadow = "5px 5px 10px 2px #2B2B2B"
             }
             for (let i = 0; i < headerFooter.length; i++){
                 headerFooter[i].style.backgroundColor = "#362222";
+                zoomText.style.color = "#CCCCCC"
             }
         } else {
             articleBackground.style.backgroundColor = "#fff";
@@ -44,15 +47,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 cardsText[i].style.color = "#000"
                 cardsText[i].style.textShadow = "1px 1px 2px #fff"
             }
-            for (let i = 0; i < cardsTitle.length; i++){
-                cardsTitle[i].style.color = "#000";
+            for (let i = 0; i < titles.length; i++){
+                titles[i].style.color = "#000";
             }
                  for (let i = 0; i < images.length; i++){
                 images[i].style.boxShadow = "5px 5px 10px 2px #000"
             }
             for (let i = 0; i < headerFooter.length; i++){
                 headerFooter[i].style.backgroundColor = "#ffcd28";
+                zoomText.style.color = "#000"
             }
         }
     });
 });
+
+//  Zoom slider function
+
+const slider = document.getElementById("zoom");
+slider.addEventListener('input', () =>{
+    const cards = document.getElementsByClassName("card");
+    const images = document.getElementsByClassName('image');
+    const cardsTitle = document.getElementsByClassName('cardTitle');
+    const zoomText = document.getElementById('zoomText');
+    for(let i= 0; i < cards.length; i++ ){
+        cards[i].style.width = `calc(300px + ${slider.value}px`;
+        cards[i].style.height = `calc(450px + ${slider.value}px`;
+        images[i].style.width = `calc(200px + ${slider.value}px`;
+        images[i].style.height = `calc(300px + ${slider.value}px`;
+        cardsTitle[i].style.fontSize = `calc(35px + (${slider.value}px/10)`;
+        zoomText.innerText = `${slider.value}%`;
+    }
+})
