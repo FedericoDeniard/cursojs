@@ -66,10 +66,6 @@ article h3 {
     max-width: 100%;
 }
 
-#zoom::thumb{
-    color: #ffcd28;
-}
-
 article .portfolio {
     display: flex;
     justify-content: space-evenly;
@@ -160,7 +156,7 @@ article .portfolio a p{
     right: 0;
     margin: auto;
     opacity: 0;
-    font-size: 1.37rem;
+    font-size: 13.7px;
     font-family: "roboto";
     font-weight: 800;
     color: #000;

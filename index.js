@@ -88,6 +88,7 @@ slider.addEventListener('input', () => {
     const images = document.getElementsByClassName('image');
     const cardsTitle = document.getElementsByClassName('cardTitle');
     const zoomText = document.getElementById('zoomText');
+    const cardsText = document.getElementsByClassName('text');
     zoomText.innerText = `${slider.value}%`;
     for (let i = 0; i < cards.length; i++) {
         cards[i].style.width = `calc(300px + ${slider.value}px)`;
@@ -99,5 +100,13 @@ slider.addEventListener('input', () => {
     }
     for (let i = 0; i < cardsTitle.length; i++) {
         cardsTitle[i].style.fontSize = `calc(35px + (${slider.value}px/10))`;
+    }
+    for (let i = 0; i < cardsText.length; i++){
+        if (slider.value >= 0){
+            cardsText[i].style.fontSize = `calc(13.7px + (${slider.value}px/14))`;
+        }
+        else{
+            cardsText[i].style.fontSize = `calc(13.7px + (${slider.value}px/60))`;
+        }
     }
 });
