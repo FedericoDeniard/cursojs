@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type="text/css" href="../../fonts.css">
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <title>RGB selector</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html">
+        <h1>Javascript
+            <p>by Federico Deniard</p>
+        </h1>
+        </a>
+    </header>
+    <article>
+        <div class="main-container">
+            <div class="first-container">
+                    <div class="color">
+                        <label for="red"> Red (R)</label>
+                        <input id="red" type="range" min="0" max="255" value="23" step="1">
+                        <p id="red-text"></p>
+                    </div>
+                    <div class="color">
+                        <label for="green"> Green (G)</label>
+                        <input id="green" type="range" min="0" max="255" value="41" step="1">
+                        <p id="green-text"></p>
+                    </div>
+                    <div class="color">
+                        <label for="blue"> Blue (B)</label>
+                        <input id="blue" type="range" min="0" max="255" value="56" step="1">
+                        <p id="blue-text"></p>
+                    </div>
+            </div>
+        </div>
+    </article>
+<script src="./app.js"></script>
+</body>
+</html>
