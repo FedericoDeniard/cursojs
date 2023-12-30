@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             applyLightTheme();
         }
-
-        // Guardar el estado del tema en localStorage
         localStorage.setItem('darkTheme', toggleValue.toString());
     });
 
