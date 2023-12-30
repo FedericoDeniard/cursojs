@@ -73,11 +73,23 @@ article .portfolio a {
     margin: 20px;
     position: relative;
     transition: all .3s ease;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
 }
 
 article .portfolio a:hover{
     box-shadow: none;
     outline: 4px solid #ffcd28;
+        transform: scale3d(1.1, 1.1, 0.3);
+            -webkit-transform: scale3d(1.1, 1.1, 0.3);
+            -moz-transform: scale3d(1.1,1.1,0.3);
+    z-index: 100;
+}
+
+article .portfolio a:active{
+    transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
 }
 
 .card{
