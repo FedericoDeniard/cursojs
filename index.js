@@ -7,12 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const theme = document.getElementById("toggle");
     const images = document.getElementsByClassName('image');
     const headerFooter = document.getElementsByClassName('headerFooter');
+    const linkedinSVG = document.getElementsByClassName('linkimg');
+    const githubSVG = document.getElementsByClassName('gitimg');
 
     theme.addEventListener('click', () => {
         const toggleValue = theme.checked;
 
         if (toggleValue) {
             articleBackground.style.backgroundColor = "#2B2B2B";
+            linkedinSVG.src = "./assets/linkedinDark.svg";
+            githubSVG.src= "./assets/githubDark.svg";
             for (let i = 0; i < evenCards.length; i++){
                 evenCards[i].style.backgroundColor = "#171010"
             }
@@ -34,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             articleBackground.style.backgroundColor = "#fff";
+            linkedinSVG.src = "./assets/linkedin.svg";
+            githubSVG.src= "./assets/github.svg";
             for (let i = 0; i < evenCards.length; i++){
                 evenCards[i].style.backgroundColor = "#E8C3A0"
             }
