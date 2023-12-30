@@ -69,12 +69,17 @@ slider.addEventListener('input', () =>{
     const images = document.getElementsByClassName('image');
     const cardsTitle = document.getElementsByClassName('cardTitle');
     const zoomText = document.getElementById('zoomText');
+        zoomText.innerText = `${slider.value}%`;
     for(let i= 0; i < cards.length; i++ ){
         cards[i].style.width = `calc(300px + ${slider.value}px`;
         cards[i].style.height = `calc(450px + ${slider.value}px`;
+    }
+    for(let i=0; i < images.length; i++){
         images[i].style.width = `calc(200px + ${slider.value}px`;
         images[i].style.height = `calc(300px + ${slider.value}px`;
-        cardsTitle[i].style.fontSize = `calc(35px + (${slider.value}px/10)`;
-        zoomText.innerText = `${slider.value}%`;
     }
-})
+    for (let i=0; i < cardsTitle.length; i++){
+        cardsTitle[i].style.fontSize = `calc(35px + (${slider.value}px/10)`;
+    }
+    }
+)
