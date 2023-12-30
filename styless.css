@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+    font-family: "roboto";
 }
 
 body {
@@ -21,6 +22,11 @@ header {
     display: flex;
     align-items: center;
     user-select: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
 }
 
 header h1 {
