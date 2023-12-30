@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
-    font-family: "Roboto";
+    font-family: "roboto";
 }
 
 body {
@@ -40,15 +40,16 @@ header h1 p {
     margin-left: 10rem;
 }
 
-
-
 article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 100%;
     height: calc(100vh - 7rem);
+    padding: 1rem;
 }
+
 
 article div{
     display: flex;
