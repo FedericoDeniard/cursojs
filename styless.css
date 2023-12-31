@@ -209,6 +209,14 @@ footer a img{
     .card{
         scroll-snap-align: center;
     }
+    .touch{
+        box-shadow: none;
+        outline: 4px solid #ffcd28;
+            transform: scale3d(1.1, 1.1, 0.3);
+                -webkit-transform: scale3d(1.1, 1.1, 0.3);
+                -moz-transform: scale3d(1.1,1.1,0.3);
+        z-index: 100;
+    }
 }
 
 @media only screen and (min-width: 767px){
