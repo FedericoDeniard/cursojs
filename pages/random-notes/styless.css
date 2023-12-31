@@ -64,6 +64,9 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 5px 5px 3px 0px #222;
+    padding: 10px;
 }
 
 #title {
@@ -87,9 +90,13 @@ article {
 
 #autor{
     font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #boton-cambiar-cita {
     height: 50px;
     width: 200px;
+    font-size: 25px;
 }
