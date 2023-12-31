@@ -112,10 +112,10 @@ window.getSavedTheme = localStorage.getItem("darkTheme");
 //  hover on mobile
 const cards = document.getElementsByClassName("card");
 for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener('contextmenu', function (e){
+    e.preventDefault();
+  })
   cards[i].addEventListener('touchstart', (event) => {
-    if (event.target.tagName.toLowerCase() === 'a') {
-      event.preventDefault();
-    }
     cards[i].classList.add('touch');
   });
 
