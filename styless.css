@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-size: 10px;
     font-family: "roboto";
-    transition: all .3s ease
+    transition: all .3s ease;
+    user-select: none;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
 
@@ -48,6 +50,7 @@ article {
     align-items: center;
     padding: 1rem;
     width: 100%;
+    gap: 20px;
 }
 
 article h3 {
@@ -209,4 +212,16 @@ footer a{
 
 footer a img{
     height: 2.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio {
+        scroll-snap-type: y mandatory;
+        overflow-x: scroll;
+        height: 620px;
+        width: 350px;
+    }
+    .card{
+        scroll-snap-align: center;
+    }
 }
