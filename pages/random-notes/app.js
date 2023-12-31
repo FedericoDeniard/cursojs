@@ -17,3 +17,6 @@ function cambiarCita(){
 cambiarCita();
 
 botonElem.addEventListener('click', cambiarCita);
+
+const savedTheme = window.getSavedTheme;
+console.log(savedTheme);

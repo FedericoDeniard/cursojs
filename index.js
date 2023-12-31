@@ -105,3 +105,7 @@ slider.addEventListener("input", () => {
     cardsText[i].style.fontSize = `calc(13.7px + (${slider.value}px/70))`;
   }
 });
+
+
+window.getSavedTheme = localStorage.getItem("darkTheme");
+console.log(getSavedTheme);
