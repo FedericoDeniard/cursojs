@@ -108,4 +108,3 @@ slider.addEventListener("input", () => {
 
 
 window.getSavedTheme = localStorage.getItem("darkTheme");
-console.log(getSavedTheme);

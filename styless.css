@@ -64,6 +64,21 @@ article h3 {
 #zoom {
     width: 600px;
     max-width: 100%;
+    appearance: none;
+    height: 5px;
+    border-radius: 100px;
+    background-color: #c0c0c0;
+
+}
+
+#zoom::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px; /* Ancho del thumb */
+    height: 15px; /* Alto del thumb */
+    border-radius: 50%;
+    background: rgb(54, 34, 34); /* Color del thumb */
+    cursor: pointer;
+    outline: 1px solid #fff ;
 }
 
 article .portfolio {
