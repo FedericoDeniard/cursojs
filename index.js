@@ -110,9 +110,10 @@ slider.addEventListener("input", () => {
 window.getSavedTheme = localStorage.getItem("darkTheme");
 
 //  hover on mobile
-/* const cards = document.getElementsByClassName("card");
+const cards = document.getElementsByClassName("card");
 for(let i = 0; i < cards.length ; i++) {
-  cards[i].addEventListener('touchstart', () => {
+  cards[i].addEventListener('touchstart', (event) => {
+    event.preventDefault();
     cards[i].classList.add('touch');
   });
 
@@ -120,4 +121,4 @@ for(let i = 0; i < cards.length ; i++) {
     cards[i].classList.remove('touch');
   });
 }
- */
+

@@ -112,29 +112,6 @@ article .portfolio a {
     user-select: none;
 }
 
-.card:hover img {
-    transform: 
-    perspective(250px)
-    rotateX(10deg)
-    translateY(-5%)
-    translateZ(0);
-    transition: all .3s ease;
-    opacity: .5;
-    box-shadow: none;
-    border: 2px solid #000;
-}
-
-.card:hover h5 {
-    font-size: 4.5rem;
-    transition: all .3s ease;
-}
-
-.card:hover p{
-    opacity: 1;
-    transform: translateY(10%);
-    transition: all .3s ease;
-}
-
 article .portfolio a h5{
     margin: auto;
     font-size: 3.5rem;
@@ -209,13 +186,35 @@ footer a img{
     .card{
         scroll-snap-align: center;
     }
-    .touch{
+    /* .touch{
         box-shadow: none;
         outline: 4px solid #ffcd28;
             transform: scale3d(1.1, 1.1, 0.3);
                 -webkit-transform: scale3d(1.1, 1.1, 0.3);
                 -moz-transform: scale3d(1.1,1.1,0.3);
         z-index: 100;
+    } */
+    .touch img {
+        transform: 
+        perspective(250px)
+        rotateX(10deg)
+        translateY(-5%)
+        translateZ(0);
+        transition: all .3s ease;
+        opacity: .5;
+        box-shadow: none;
+        border: 2px solid #000;
+    }
+    
+    .touch .cardTitle {
+        font-size: 4.5rem;
+        transition: all .3s ease;
+    }
+    
+    .touch .text{
+        opacity: 1;
+        transform: translateY(10%);
+        transition: all .3s ease;
     }
 }
 
@@ -233,4 +232,28 @@ article .portfolio a:active{
         -webkit-transform: rotateY(360deg);
         -moz-transform: rotateY(360deg);
 }
+
+.card:hover img {
+    transform: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+    transition: all .3s ease;
+    opacity: .5;
+    box-shadow: none;
+    border: 2px solid #000;
+}
+
+.card:hover h5 {
+    font-size: 4.5rem;
+    transition: all .3s ease;
+}
+
+.card:hover p{
+    opacity: 1;
+    transform: translateY(10%);
+    transition: all .3s ease;
+}
+
 }
