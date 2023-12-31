@@ -57,7 +57,6 @@ article h3 {
     font-size: 5rem;
     font-family: "Roboto";
     font-weight: 400;
-    padding: 2rem;
 }
 
 #zoomText{
@@ -182,24 +181,19 @@ footer a img{
     height: 2.5rem;
 }
 
+
+/* Mobile */
 @media only screen and (max-width: 767px) {
     .portfolio {
         scroll-snap-type: y mandatory;
         overflow-x: scroll;
         height: 620px;
         width: 350px;
+        margin-top: 5px;
     }
     .card{
         scroll-snap-align: center;
     }
-    /* .touch{
-        box-shadow: none;
-        outline: 4px solid #ffcd28;
-            transform: scale3d(1.1, 1.1, 0.3);
-                -webkit-transform: scale3d(1.1, 1.1, 0.3);
-                -moz-transform: scale3d(1.1,1.1,0.3);
-        z-index: 100;
-    } */
     .touch img {
         transform: 
         perspective(250px)
@@ -222,8 +216,23 @@ footer a img{
         transform: translateY(10%);
         transition: all .3s ease;
     }
+
+    article {
+        gap: 5px;
+    }
+
+    article h3 {
+        font-size: 3rem;
+        padding: 0px;
+    }
+
+    #zoomText{
+        font-size: 2rem;
+    }  
+
 }
 
+/* Desktop */
 @media only screen and (min-width: 767px){
 article .portfolio a:hover{
     box-shadow: none;
