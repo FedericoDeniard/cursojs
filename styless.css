@@ -110,6 +110,7 @@ article .portfolio a {
 
 .card{
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .card:focus{
