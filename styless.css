@@ -112,6 +112,11 @@ article .portfolio a {
     user-select: none;
 }
 
+.card:focus{
+    outline: none; 
+    -webkit-tap-highlight-color: transparent; 
+
+}
 article .portfolio a h5{
     margin: auto;
     font-size: 3.5rem;
