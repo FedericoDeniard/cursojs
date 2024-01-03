@@ -61,6 +61,10 @@ main {
     border-radius: 10px;
     box-shadow: 10px 10px 1px 1px #222;
     border: 2px solid #000;
+    max-height: 600px;
+    max-width: 450px;
+    overflow: auto;
+
 }
 
 .container h2{
@@ -90,6 +94,7 @@ main {
     border-radius: 5px;
     border: 1px solid #000;
     font-size: 15px;
+    margin-top: 5px;
 }
 
 .inputs-box button:active{
@@ -108,6 +113,7 @@ main {
     margin-top: 5px;
     border-radius: 5px;
     border: 2px solid #222;
+    align-items: center;
 }
 
 .task p,
@@ -119,6 +125,9 @@ main {
 .task p{
     width: 80%;
     text-align: start;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .task i,
