@@ -144,3 +144,12 @@ main {
     text-decoration: line-through;
 }
 
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    
+.container {
+    max-width: 90vw;
+}
+
+}
